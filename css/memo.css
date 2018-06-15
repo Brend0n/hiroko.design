@@ -1,0 +1,32 @@
+/*animation properties*/
+
+div {
+	-webkit-animation: animationName;
+       -moz-animation:  animationName;
+        -ms-animation:  animationName;
+            animation:  animationName 2s;
+            transform: rotate(-8deg);
+            animation-delay: 0.5s;
+		animation-fill-mode: forwards;/*stays on the last animation*/
+}
+@keyframes animationName {
+	from {}
+	to{}
+}
+ @-webkit-keyframes animationName {
+   from {}
+	to{}
+  }
+  @-moz-keyframes animationName {
+    from {}
+	to{}
+  }
+  @-ms-keyframes animationName {
+    from {}
+	to{}
+  }
+  @keyframes animationName {
+    from {}
+	to{}
+  } 
+}

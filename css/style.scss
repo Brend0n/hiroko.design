@@ -1,0 +1,483 @@
+$main-bk: #333;
+$bg-color: #fff;
+$keyColor: #008CBA;
+$screen-lg: 1200px;
+$screen-md: 992px;
+$screen-sm: 768px;
+$a-tags-hover: 'a:active, a:hover';
+$main-font: 'EB Garamond', serif;
+$font-sm: 12px;
+/*keyframe for */
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+@mixin animation($animationBehavior) {
+	-webkit-animation: $animationBehavior;
+     -moz-animation: $animationBehavior;
+      -ms-animation: $animationBehavior;
+          animation: $animationBehavior;
+}
+
+body {
+	background-color: $bg-color;
+	font-family: 'Roboto', sans-serif;
+	color: $main-bk;
+	line-height: 2.4;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+a {
+	color: $main-bk;
+	text-decoration: none;
+	cursor: pointer;
+}
+h1 {
+	margin: 10px;
+	font-weight: 200;
+	font-family: $main-font;
+}
+header {
+	// position: fixed;
+	z-index: 2;
+}
+header .container {
+	padding: 0;
+}
+header #header-pc-screen{
+    position: relative;
+	top: -10px;
+	left: -25px;
+	@include animation(fadein 2s);
+	animation-fill-mode: forwards;
+@include keyframes(fadein) {
+  from { 
+  		opacity: 0; 
+  		top: -10px;
+  		}
+   to   { 
+   		opacity: 1; 
+   		top: 0;
+   		}
+	}
+	.header-right-box {
+		float: right;
+		.header-text {
+			padding: 25px 0 25px 50px;
+			float: left;
+			a {
+			font-size: 14px;
+			}
+		}
+	}
+	#myLogo {
+		padding: 10px;
+		float: left;
+		img {
+		transform: rotate(-8deg);
+		width: 250px
+		}
+	}
+}
+//hamberger menu
+header #header-sp-screen {
+	display: none;
+}
+@media (max-width: $screen-sm) {
+	header #header-pc-screen {
+	display: none;
+	}
+	header {
+		// background-color: orange;
+		width: 100vw;
+	}
+	header #header-sp-screen {
+	display: block;
+		#myLogo {
+			padding: 10px 0;
+			float: left;
+				img {
+				transform: rotate(-8deg);
+				width: 200px
+				}	
+			}	
+	}
+	label .menu {
+		position: absolute;
+		right: 27px;
+		top: 10px;
+		z-index: 100;
+		width: 30px;
+		height: 30px;
+		background-color: transparent;
+		transition: .5s ease-in-out;
+		box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+		cursor: pointer;
+	}
+	label .hamburger {
+	  position: absolute;
+	  top: 12px;
+	  left: 0px;
+	  width: 30px;
+	  height: 2px;
+	  background: #000;
+	  display: block;
+	  -webkit-transform-origin: center;
+	          transform-origin: center;
+	  transition: .5s ease-in-out;
+	}
+	label .hamburger:after, label .hamburger:before {
+	  transition: .5s ease-in-out;
+	  content: "";
+	  position: absolute;
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  background: #000;
+	}
+	label .hamburger:before {
+	  top: -10px;
+	}
+	label .hamburger:after {
+	  bottom: -10px;
+	}
+	label input {
+	  display: none;
+	}
+	label input:checked + .menu {
+	  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+	  border-radius: 0;
+	    background: #FFF;
+	}
+	label input:checked + .menu .hamburger {
+	  -webkit-transform: rotate(45deg);
+	          transform: rotate(45deg);
+	}
+	label input:checked + .menu .hamburger:after {
+	  -webkit-transform: rotate(90deg);
+	          transform: rotate(90deg);
+	  bottom: 0;
+	}
+	label input:checked + .menu .hamburger:before {
+	  -webkit-transform: rotate(90deg);
+	          transform: rotate(90deg);
+	  top: 0;
+	}
+	label input:checked + .menu + ul {
+	  opacity: 1;
+	}
+	label ul {
+	  z-index: 200;
+	  position: absolute;
+	  top: 30%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	          transform: translate(-50%, -50%);
+	  opacity: 0;
+	  transition: .25s 0s ease-in-out;
+	}
+	label a {
+	  margin-bottom: 1em;
+	  display: block;
+	  color: #000;
+	  text-decoration: none;
+	}
+
+}
+
+.product-title {
+	margin: 100px 0 50px 0;
+	}
+.top-title {
+	margin: 160px 0 120px 0;
+}
+.title-text {
+	text-align: center;
+
+	@media (max-width: $screen-sm) {
+		margin: 100px 0 30px 0;
+	}
+	h1 {
+		font-size: 45px;
+		@include animation(fedin-others 2s);
+		animation-delay: 0.3s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+		// position: absolute;
+		top: -10px;
+		position: relative;
+		@media (max-width: $screen-sm) {
+		font-size: 30px;
+		line-height: 1.4;
+	    }
+    }
+    @include keyframes(fedin-others) {
+  from { 
+  		opacity: 0; 
+  		top: -10px;
+  		}
+   to   { 
+   		opacity: 1; 
+   		top: 0;
+   		}
+	}
+}
+#more-info-box {
+	margin: auto;
+	position: relative;
+	height: 25px;
+	width: 70px;
+}
+#more-info-text {
+	position: absolute;
+	top: 0;
+	left: 4px;
+	animation-name: updown;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0;
+	animation-play-state: forwards;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;	
+}
+@keyframes updown {
+	from {
+		top: 0;
+	}
+	to {
+		top: 10px;
+	}
+}
+.row {
+	float: left;
+	.width-50 {
+	width: 50%;
+	}
+	.width-100 {
+	width: 100%;
+	}
+}
+.portfolio
+{
+	margin: 20px 0;
+}
+
+.portfolio-sorting
+    {
+	text-transform: uppercase;	
+	font-size: 14px;
+	margin-bottom: 20px;
+	@include animation(fedin-others 2s);
+	animation-delay: 0.6s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	top: -10px;
+	position: relative;
+	li a {
+		color: $main-bk;
+		text-decoration: none;
+		padding: 6px;
+	    :hover{
+	    	color: #2980b9;
+			border-bottom: 2px solid #2980b9;
+	    }
+
+	}
+}
+.portfolio-sorting li a:hover,
+.portfolio-sorting li a.active
+{
+	color: $keyColor;
+	border-bottom: 2px solid $keyColor;
+}
+
+.portfolio-item 
+{
+	margin-bottom: 30px;
+	@include animation(fedin-others 2s);
+	animation-delay: 0.9s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	top: -10px;
+	position: relative;
+
+}
+.portfolio .row {
+	float: none;
+}
+.img-box {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+.pt-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .5s ease;
+  	background-color: $keyColor;
+}
+.pt-box:hover .pt-overlay {
+	opacity: 0.8;
+}
+.pt-title {
+	font-family: $main-font;
+	color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-box {
+	padding: 20px 0 20px 0;
+}
+.product-table a {
+	color: $keyColor;
+}
+.tab-content a {
+	color: $keyColor;
+}
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td
+{
+	padding: 15px 8px 15px 8px;
+	// border: none;
+	font-size: $font-sm;
+	font-weight: 400;
+}
+.product-discription {
+	line-height: 2;
+	font-size: $font-sm;
+}
+.nav-tabs {
+    border-bottom: none;
+    margin-left: 10px;
+    .nav-link.active {
+		background-color: transparent;
+		border: none;
+		color: $keyColor;
+	}
+	a {
+		font-size: $font-sm;
+	}
+}
+.text-box {
+	width: 500px;
+	height: 400px;
+	background-color: gray;
+}
+.box-padding {
+	margin-bottom: 40px;
+}
+.prodacts-box {
+	position: relative;
+	margin: 0 auto;
+	img {
+		width: 100%;
+	}
+}
+.full-width {
+	width: 100%;
+}
+.mid-width {
+	width: 80%;
+}
+.goBack-box {
+	width: 32px;
+	height: 32px;
+	background-color: $main-bk;
+	margin: 40px auto;
+	cursor: pointer;
+	position: relative;
+	&:hover {
+		opacity: 0.8;
+	 }
+	 .border-h {
+	 	position: absolute;
+	 	width: 2px;
+	 	height: 32px;
+	 	top: 0;
+	 	left: 15px;
+	 	background-color: $bg-color;
+	 }
+	 .border-v {
+	 	position: absolute;
+	 	width: 32px;
+	 	height: 2px;
+	 	top: 15px;
+	 	left: 0px;
+	 	background-color: $bg-color;
+	 }
+}
+.statement-title {
+	font-weight: 600;
+	font-size: 16px;
+}
+.footer-text {
+	font-size: 12px;
+	margin: 30px 0;
+	text-align: center;
+	color: $main-bk;
+}
+@media (max-width: $screen-sm) {
+		.mid-width {
+			width: 100%;
+		}
+}
+.myName {
+	font-family: $main-font;
+	font-size: 30px;
+	line-height: 1.5;
+}
+.about-title {
+	font-family: $main-font;
+	font-size: 16px;
+	color: #93b2bc;
+}
+.about-table {
+	margin-top: 40px;
+	tr {
+		line-height: 2.5!important;
+
+	}
+}
+.about-table > tbody > tr  {
+	th {
+		line-height: 2.5;
+	}
+	td {
+		line-height: 2.5;
+	}
+}
+
+
+
+
+
+
+
+
+
