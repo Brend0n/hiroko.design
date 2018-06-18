@@ -349,6 +349,7 @@ header #header-sp-screen {
 
 .container-box {
 	padding: 20px 0 20px 0;
+	width: 100%;
 }
 .product-table a {
 	color: $keyColor;
@@ -472,8 +473,22 @@ header #header-sp-screen {
 		line-height: 2.5;
 	}
 }
+#myTabContent {
+	width: 100%;
+}
+.contact-me {
+	margin-top: 100px;
+	text-align: center;
 
-
+}
+.contact-discription {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 50px;
+	a {
+		color: $keyColor
+	}
+}
 
 
 
