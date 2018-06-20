@@ -6,7 +6,7 @@ $screen-md: 992px;
 $screen-sm: 768px;
 $a-tags-hover: 'a:active, a:hover';
 $main-font: 'EB Garamond', serif;
-$font-sm: 12px;
+$font-sm: 14px;
 /*keyframe for */
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
@@ -99,7 +99,7 @@ header #header-sp-screen {
 	}
 	header {
 		// background-color: orange;
-		width: 100vw;
+		// width: 100vw;
 	}
 	header #header-sp-screen {
 	display: block;
@@ -114,7 +114,7 @@ header #header-sp-screen {
 	}
 	label .menu {
 		position: absolute;
-		right: 27px;
+		right: 15px;
 		top: 10px;
 		z-index: 100;
 		width: 30px;
@@ -446,6 +446,9 @@ header #header-sp-screen {
 @media (max-width: $screen-sm) {
 		.mid-width {
 			width: 100%;
+		}
+		.container-box{
+			width: auto;
 		}
 }
 .myName {

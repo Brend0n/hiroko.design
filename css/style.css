@@ -81,9 +81,6 @@ header #header-sp-screen {
   header #header-pc-screen {
     display: none; }
 
-  header {
-    width: 100vw; }
-
   header #header-sp-screen {
     display: block; }
     header #header-sp-screen #myLogo {
@@ -95,7 +92,7 @@ header #header-sp-screen {
 
   label .menu {
     position: absolute;
-    right: 27px;
+    right: 15px;
     top: 10px;
     z-index: 100;
     width: 30px;
@@ -348,12 +345,12 @@ header #header-sp-screen {
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   padding: 15px 8px 15px 8px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400; }
 
 .product-discription {
   line-height: 2;
-  font-size: 12px; }
+  font-size: 14px; }
 
 .nav-tabs {
   border-bottom: none;
@@ -363,7 +360,7 @@ header #header-sp-screen {
     border: none;
     color: #008CBA; }
   .nav-tabs a {
-    font-size: 12px; }
+    font-size: 14px; }
 
 .text-box {
   width: 500px;
@@ -421,7 +418,10 @@ header #header-sp-screen {
 
 @media (max-width: 768px) {
   .mid-width {
-    width: 100%; } }
+    width: 100%; }
+
+  .container-box {
+    width: auto; } }
 .myName {
   font-family: "EB Garamond", serif;
   font-size: 30px;
