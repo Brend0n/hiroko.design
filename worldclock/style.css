@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: rgb(9, 12, 56);
+}
+
+#box {
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    180deg,
+    #0b0720,
+    #4b2689,
+    #cc3394,
+    #90cee8,
+    #90e4e8
+  );
+  width: 400px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  transition: background-position 3s ease-in-out;
+  background-position: bottom;
+}
+#sky {
+  position: absolute;
+  top: 30px;
+  left: -600px;
+  width: 1600px;
+  transition: transform 3s cubic-bezier(0.67, 0, 0.16, 0.99);
+}
+.cloud-animation {
+  animation: move 25s infinite alternate;
+  animation-timing-function: linear;
+}
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+#cloud1 {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  width: 140px;
+}
+#cloud2 {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  width: 120px;
+}
+#cloud3 {
+  position: absolute;
+  top: 400px;
+  left: 160px;
+  width: 160px;
+}
+#cloud4 {
+  position: absolute;
+  top: 480px;
+  left: 250px;
+  width: 120px;
+}
+#cloud5 {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  width: 120px;
+}
+.timeBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 130%;
+}
+#time {
+  font-size: 70px;
+  color: white;
+}
+#select-box {
+  margin-top: 10px;
+  position: relative;
+}
+#selector {
+  width: 40%;
+  height: 30px;
+  border: none;
+}
+
+.button {
+  background: orange;
+  color: white;
+  font-size: 12px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  position: absolute;
+
+  z-index: 4;
+
+  cursor: pointer;
+}
+#button-inbetween {
+  top: 500px;
+  left: 160px;
+}
+#button-noon {
+  top: 500px;
+  left: 20px;
+}
+
+#button-night {
+  top: 500px;
+  left: 300px;
+}

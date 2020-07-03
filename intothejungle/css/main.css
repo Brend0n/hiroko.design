@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  font-size: 5em;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+section {
+  height: 150%;
+  overflow: hidden;
+  position: relative;
+}
+section img {
+  position: absolute;
+  width: 800px;
+}
+#topleft {
+  top: -150px;
+  left: -20px;
+  width: 1000px;
+  z-index: 2;
+}
+#topright {
+  top: -150px;
+  right: -20px;
+  width: 1000px;
+  z-index: 3;
+}
+#bottomleft {
+  bottom: 40px;
+  left: -200px;
+  width: 1000px;
+  z-index: 4;
+}
+#bottomright {
+  bottom: -200px;
+  right: -150px;
+  width: 1200px;
+  z-index: 5;
+}
+#background {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
