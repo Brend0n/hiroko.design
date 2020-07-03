@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- old IE browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- responsive screen -->
+    <meta name="description" content="This is Hiroko's portfolio site." />
+    <link
+      rel="icon"
+      href="img/favicon16-16.png"
+      sizes="16x16"
+      type="img/favicon16-16.png"
+    />
+    <link rel="icon" href="img/32-32.png" sizes="32x32" type="img/32-32.png" />
+    <link rel="icon" href="img/48-48.png" sizes="48x48" type="img/48-48.png" />
+    <link
+      rel="icon"
+      href="img/favicon62-62.png"
+      sizes="62x62"
+      type="img/favicon62-62.png"
+    />
+    <link rel="apple-touch-icon-precomposed" href="img/favicon150-150.png" />
+    <!-- 150 × 150px -->
+    <link
+      href="https://fonts.googleapis.com/css?family=EB+Garamond:400"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>World Clock</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/worldclock/style.css" />
+  </head>
+  <body>
+    <div class="clock-background">
+      <div id="box">
+        <img id="sky" src="/worldclock/img/sky.svg" alt="sky" />
+        <img
+          src="/worldclock/img/cloud1.svg"
+          class="cloud-animation"
+          id="cloud1"
+          alt="sky"
+        />
+        <img
+          src="/worldclock/img/cloud2.svg"
+          class="cloud-animation"
+          id="cloud2"
+          alt="sky"
+        />
+        <img
+          src="/worldclock/img/cloud1.svg"
+          class="cloud-animation"
+          id="cloud3"
+          alt="sky"
+        />
+        <img
+          src="/worldclock/img/cloud2.svg"
+          class="cloud-animation"
+          id="cloud4"
+          alt="sky"
+        />
+        <img
+          src="/worldclock/img/cloud2.svg"
+          class="cloud-animation"
+          id="cloud5"
+          alt="sky"
+        />
+        <div class="timeBox">
+          <div id="time"></div>
+        </div>
+        <div class="timeBox" id="select-box">
+          <select id="selector">
+            <option value="currentTime">Local time</option>
+            <option value="londonTime">London</option>
+            <option value="parisTime">Paris</option>
+            <option value="newyorkTime">New York</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/worldclock/script.js"></script>
+  </body>
+</html>

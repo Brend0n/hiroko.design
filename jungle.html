@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax</title>
+    <link rel="stylesheet" href="/intothejungle/css/main.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- old IE browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- responsive screen -->
+    <meta name="description" content="This is Hiroko's portfolio site." />
+    <link
+      rel="icon"
+      href="img/favicon16-16.png"
+      sizes="16x16"
+      type="img/favicon16-16.png"
+    />
+    <link rel="icon" href="img/32-32.png" sizes="32x32" type="img/32-32.png" />
+    <link rel="icon" href="img/48-48.png" sizes="48x48" type="img/48-48.png" />
+    <link
+      rel="icon"
+      href="img/favicon62-62.png"
+      sizes="62x62"
+      type="img/favicon62-62.png"
+    />
+    <link rel="apple-touch-icon-precomposed" href="img/favicon150-150.png" />
+    <!-- 150 × 150px -->
+    <link
+      href="https://fonts.googleapis.com/css?family=EB+Garamond:400"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Hiroko Bouzas/Into the jungle</title>
+  </head>
+  <body>
+    <section>
+      <img
+        id="topleft"
+        class="scroll"
+        data-speedx="-0.7"
+        data-speedy="-0.7"
+        src="/intothejungle/img/TOPLEFT2.png"
+        alt=""
+      />
+      <img
+        id="topright"
+        class="scroll"
+        data-speedx="0.7"
+        data-speedy="-0.7"
+        src="/intothejungle/img/TOPLEFT2.png"
+        alt=""
+      />
+      <img
+        class="scroll"
+        data-speedx="-1.5"
+        data-speedy="1.5"
+        id="bottomleft"
+        src="/intothejungle/img/LEAVES2.png"
+        alt=""
+      />
+      <img
+        id="bottomright"
+        class="scroll"
+        data-speedx=""
+        data-speedy="3"
+        src="/intothejungle/img/LEAVES1.png"
+        alt=""
+      />
+      <img
+        id="background"
+        data-speedx="0.3"
+        data-speedy="0.3"
+        src="/intothejungle/img/tigerF.jpg"
+        alt=""
+      />
+    </section>
+    <div class="container">
+      <div class="title-text product-title">
+        <h1>Into the jungle</h1>
+        <div id="more-info-box"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row container-box">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="home-tab"
+              data-toggle="tab"
+              href="#home"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+              >EN</a
+            >
+          </li>
+          <!-- <li class="nav-item">
+            <a
+              class="nav-link"
+              id="profile-tab"
+              data-toggle="tab"
+              href="#profile"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              >JP</a
+            >
+          </li> -->
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="col-sm-6 col-xs-12">
+              <table class="table">
+                <tbody class="product-table">
+                  <tr>
+                    <th>Product Type</th>
+                    <td>JS and CSS animation practice -parallax-</td>
+                  </tr>
+                  <tr>
+                    <th>Graphic Design</th>
+                    <td>Hiroko Bouzas</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="product-discription">
+                This is the JS practice with parallax effect.<br />
+                This is still trial fase and it is not SP friendly.
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="col-sm-6 col-xs-12">
+              <table class="table">
+                <tbody class="product-table">
+                  <tr>
+                    <th>プロダクトタイプ</th>
+                    <td>JSプラクティスーパララックス</td>
+                  </tr>
+                  <tr>
+                    <th>グラフィックデザイン</th>
+                    <td>ボウザス裕子</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-sm-6 col-xs-12" data-aos="fade-up">
+              <div class="product-discription">
+                パララックスエフェクトを使ってジャングルに分け入るような感覚を再現。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="goback"></div>
+    <div id="footer"></div>
+    <!-- <section></section> -->
+    <script>
+      window.addEventListener("scroll", (e) => {
+        let scrolledPosition = window.pageYOffset;
+        const target = document.querySelectorAll(".scroll");
+
+        for (i = 0; i < target.length; i++) {
+          let speedX = scrolledPosition * target[i].dataset.speedx;
+          let speedY = scrolledPosition * target[i].dataset.speedy;
+
+          target[
+            i
+          ].style.cssText = `transform:translate3d(${speedX}px,${speedY}px,0px) ; `;
+        }
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#head").load("head.html");
+        $("#header").load("header.html");
+        $("#portfolio").load("work.html");
+        $("#goback").load("goback.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
