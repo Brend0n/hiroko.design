@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- old IE browser -->
@@ -40,10 +43,6 @@
       href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css"
     />
     <link
-      rel="stylesheet prefetch"
-      href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css"
-    />
-    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -51,34 +50,61 @@
     />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <title>Hiroko Bouzas</title>
+    <title>World Clock</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/worldclock/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header id="header">
-        <!-- header load -->
-      </header>
-    </div>
-    <div class="container">
-      <div class="myName contact-me">Contact</div>
-      <div class="product-discription contact-discription">
-        Please contact me via e-mail.<br />
-        <a href="mailto:contact@hiroko.design">contact@hiroko.design</a>
+    <div class="clock-background">
+      <div id="box">
+        <img id="sky" src="/worldclock/img/sky.svg" alt="sky" />
+        <img
+          src="/worldclock/img/cloud1.svg"
+          class="cloud-animation"
+          id="cloud1"
+          alt="sky"
+        />
+        <img
+          src="/worldclock/img/cloud2.svg"
+          class="cloud-animation"
+          id="cloud2"
+          alt="sky"
+        />
+        <img
+          src="/worldclock/img/cloud1.svg"
+          class="cloud-animation"
+          id="cloud3"
+          alt="sky"
+        />
+        <img
+          src="/worldclock/img/cloud2.svg"
+          class="cloud-animation"
+          id="cloud4"
+          alt="sky"
+        />
+        <img
+          src="/worldclock/img/cloud2.svg"
+          class="cloud-animation"
+          id="cloud5"
+          alt="sky"
+        />
+        <div class="timeBox">
+          <div id="time"></div>
+        </div>
+        <div class="timeBox" id="select-box">
+          <select id="selector">
+            <option value="currentTime">Local time</option>
+            <option value="londonTime">London</option>
+            <option value="parisTime">Paris</option>
+            <option value="newyorkTime">New York</option>
+          </select>
+        </div>
       </div>
     </div>
 
-    <div id="footer"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-      $(function() {
-        $("#head").load("head.html");
-        $("#header").load("header.html");
-        $("#portfolio").load("work.html");
-        $("#footer").load("footer.html");
-      });
-    </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="/worldclock/script.js"></script>
   </body>
 </html>
