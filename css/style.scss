@@ -1,6 +1,6 @@
 $main-bk: #333;
 $bg-color: #fff;
-$keyColor: #008CBA;
+$keyColor: #B16EED;
 $screen-lg: 1200px;
 $screen-md: 992px;
 $screen-sm: 768px;
@@ -38,7 +38,7 @@ body {
     letter-spacing: 0.05em;
 }
 a {
-	color: $main-bk;
+	color: $keyColor;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -196,13 +196,13 @@ header #header-sp-screen {
 }
 
 .product-title {
-	margin: 100px 0 50px 0;
+	margin: 90px 0 50px 0;
 	}
 .top-title {
-	margin: 160px 0 120px 0;
+	margin: 90px 0 70px 0;
 }
 .title-text {
-	text-align: center;
+	//text-align: center;
 
 	@media (max-width: $screen-sm) {
 		margin: 100px 0 30px 0;
@@ -288,8 +288,8 @@ header #header-sp-screen {
 		text-decoration: none;
 		padding: 6px;
 	    :hover{
-	    	color: #2980b9;
-			border-bottom: 2px solid #2980b9;
+	    	color: #B16EED;
+			border-bottom: 2px solid #B16EED;
 	    }
 
 	}
@@ -347,7 +347,7 @@ header #header-sp-screen {
     text-align: center;
 }
 
-.container-box {
+.section-box {
 	padding: 20px 0 20px 0;
 	width: 100%;
 }
@@ -447,7 +447,7 @@ header #header-sp-screen {
 		.mid-width {
 			width: 100%;
 		}
-		.container-box{
+		.section-box{
 			width: auto;
 		}
 }
@@ -495,6 +495,7 @@ header #header-sp-screen {
 .fade {
 	opacity: 1;
 }
+
 
 
 
