@@ -32,9 +32,8 @@ h3 {
   font-weight: 500;
   font-family: "Work Sans", serif;
   font-style: normal;
-  line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
 }
 h4 {
   font-size: 18px;
@@ -65,8 +64,16 @@ h4 {
 }
 .paragraph-box {
   padding-bottom: 24px;
+  font-size: 17px;
 }
-
+.section-title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Work Sans", serif;
+  font-style: normal;
+  color:rgba(51, 51, 51, .4);
+}
+  
 
 header {
   z-index: 2;
@@ -166,7 +173,7 @@ header #header-pc-screen #myLogo {
 }
 header #header-pc-screen #myLogo img {
   transform: rotate(-8deg);
-  width: 250px;
+  width: 200px;
 }
 
 header #header-sp-screen {
@@ -460,7 +467,7 @@ header #header-sp-screen {
 .pt-title {
 
   color: white;
-  font-size: 24px;
+  font-size: 26px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -500,12 +507,16 @@ header #header-sp-screen {
   color: #7C7C7C;
 }
 .prodect-description-content {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
 }
-.prodect-description-content a {
+ a {
   color: #B16EED;
 }
+a:hover{
+  color: #B16EED;
+}
+
 
 .table > thead > tr > th,
 .table > tbody > tr > th,
