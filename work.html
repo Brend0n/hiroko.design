@@ -15,7 +15,7 @@
       <ul class="portfolio-items list-unstyled" id="grid">
         <li class="col-sm-6 col-xs-12 pt-box" data-groups='["UI"]'>
           <figure class="portfolio-item">
-            <div class="img-box">
+            <div class="img-box" >
               <a href="bmirror.html">
                 <img
                   src="img/bmirror-thumbnail.png"
@@ -23,8 +23,8 @@
                   alt="BMirror"
                   class="img-responsive"
                 />
-                <div class="pt-overlay">
-                  <dive class="background-hover"></dive>
+                <div class="pt-overlay" >
+                  <div class="background-hover" ></div>
                   <span class="pt-title">Desgining touchless experience <br>for a smart mirror</span>
                 </div>
                 
@@ -33,6 +33,7 @@
           </figure>
          
         </li>
+       
         <li class="col-sm-6 col-xs-12 pt-box" data-groups='["UI","Graphic"]'>
           <figure class="portfolio-item">
             <div class="img-box">
@@ -69,10 +70,9 @@
             </div>
           </figure>
         </li>
-        <li class="col-sm-6 col-xs-12 pt-box" data-groups='["UI","Graphic"]'>
-          <figure class="portfolio-item">
+          <li class="col-sm-6 col-xs-12 pt-box" data-groups='["UI"]'>
+         <div class="portfolio-item protectedBtn" data-target="bheart.html" tabindex="0" role="button" aria-pressed="false">
             <div class="img-box">
-              <a href="revitacare.html">
                 <img
                   src="img/revita-thumbnail.png"
                   style="width: 100%"
@@ -81,14 +81,14 @@
                 />
                 <div class="pt-overlay">
                    <dive class="background-hover"></dive>
-                  <span class="pt-title">RevitaCare</span>
+                  <span class="pt-title">🔐 <br>RevitaCare</span>
                 </div>
-              </a>
             </div>
-          </figure>
+         </div>
+
         </li>
 
-          <li class="col-sm-6 col-xs-12 pt-box" data-groups='["Graphic"]'>
+       <li class="col-sm-6 col-xs-12 pt-box" data-groups='["Graphic"]'>
           <figure class="portfolio-item">
             <a href="lenormand.html">
               <img
@@ -266,9 +266,8 @@
             </a>
           </figure>
         </li>
-       
         <li class="col-sm-6 col-xs-12 pt-box" data-groups='["Graphic" , "web"]'>
-          <figure class="portfolio-item">
+          <figure class="portfolio-item" >
             <a href="jungle.html">
               <img
                 src="img/tiger-thumbnail.png"
@@ -283,25 +282,31 @@
             </a>
           </figure>
         </li>
-       
-        <!-- <li class="col-sm-6 col-xs-12 pt-box" data-groups='["Graphic" , "web"]'>
-          <figure class="portfolio-item">
-            <a href="worldclock.html">
-              <img
-                src="img/watch-thumbnail.png"
-                style="width: 100%;"
-                alt="bunbogu"
-                class="img-responsive"
-              />
-              <div class="pt-overlay">
-                <span class="pt-title">World clock</span>
-              </div>
-            </a>
-          </figure>
-        </li> -->
+    
         <li class="col-sm-6 col-xs-12 shuffle_sizer"></li>
+
       </ul>
     </div>
   </div>
+<!--test-->
+
+<div class="protectedBtn" id="resetAuthBtn" tabindex="0" role="button" aria-pressed="false" style="background-color: #dc3545; margin-top: 30px;">
+  Reset Authentication (Test Only)
+</div>
+
+<!-- Modal -->
+<div id="passwordModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModalBtn">&times;</span>
+    <h3> Please enter the password</h3>
+    This page is password-protected. Please contact the owner for access.
+    <input type="password" id="passwordInput" placeholder="Password" />
+    <button id="submitPassword">Submit</button>
+    <div id="errorMsg" class="error-message">Incorrect password, try again.</div>
+  </div>
+</div>
+
 </section>
 <script src="js/jquery.shuffle.min.js"></script>
+<script src="js/password.js"></script>
+
