@@ -448,7 +448,7 @@ header #header-sp-screen {
   margin: 0 auto;
 }
 
-.pt-overlay {
+.background-hover {
   position: absolute;
   top: 0;
   left: 0;
@@ -458,23 +458,28 @@ header #header-sp-screen {
   height: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #B16EED;
+  background-color: #000000;
 }
 
-.pt-box:hover .pt-overlay {
+.pt-box:hover .background-hover {
   opacity: 0.8;
+}
+.pt-box:hover .pt-title {
+  opacity: 1;
 }
 
 .pt-title {
-
   color: white;
   font-size: 26px;
   position: absolute;
   top: 50%;
   left: 50%;
+  width:70%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  transition: 0.5s ease;
+  opacity:0
 }
 
 .section-box {
