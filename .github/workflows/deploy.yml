@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.LIGHTSAIL_USERNAME }}
           key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
           port: 22
-          source: "/*"
+          source: "*"
           target: "/opt/bitnami/projects/myExpress/public/hiroko.design"
           strip_components: 1
           debug: true
