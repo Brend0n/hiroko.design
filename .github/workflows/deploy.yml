@@ -22,8 +22,7 @@ jobs:
           key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
           port: 22
           script: |
-            mkdir -p /opt/bitnami/projects/myExpress/public/hiroko.design
-            chmod 755 /opt/bitnami/projects/myExpress/public/hiroko.design
+            mkdir -p /opt/bitnami/projects/myExpress/public/hiroko.design || true
 
       - name: Deploy to Lightsail
         uses: appleboy/scp-action@v0.1.7
