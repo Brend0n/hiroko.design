@@ -45,7 +45,7 @@ h4 {
   margin-bottom: 0;
 }
 .home-title {
-  margin: 90px 0 40px 0;
+  margin: 90px 0 60px 0;
 }
 .bmirror-text-highlight {
   color: #B16EED;
@@ -80,13 +80,14 @@ h4 {
   padding-bottom:5px
 }
 .tag-content {
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   font-family: "Work Sans", serif;
   font-style: normal;
   color:#898989;
   letter-spacing:0.02em;
   padding-top: 5px;
+  margin-bottom:15px
 }
 .paragraph-box {
   padding-bottom: 24px;
@@ -804,5 +805,47 @@ input[type="password"] {
   font-size: 14px;
   display: none;
   margin-top: 8px;
+}
+.gallery-card {
+  width:100%;
+  background-color: white;
+  box-shadow: 0px 6px 12px 1px rgb(0 0 0  / 10);
+  padding: 32px;
+  border: #F4F4F4;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  color:rgb(51, 51, 51);
+  
+  box-shadow: 0px 6px 20px 1px rgb(0 0 0  / 0.03);
+}
+.hover-animation {
+transition: transform 0.3s ease;
+}
+
+.hover-animation:hover {
+  transform: scale(1.02);
+}
+a:focus {
+  outline: none;
+}
+.gallery-card ul {
+  padding-inline-start: 20px;
+} 
+
+.garally-left-box {
+  padding-left:0;
+  height: auto;
+
+}
+@media (max-width: 768px) {
+  .garally-left-box {
+    padding-left:10px;
+  }
+}
+.garally-left-box img {
+  border-radius: 10px;
+}
+.garally-left-box video {
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
